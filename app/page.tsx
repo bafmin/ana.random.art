@@ -19,12 +19,28 @@ export default function Page() {
             Digital artist focused on character design. Original characters, portraits, and clean sheets for story-ready worlds.
           </p>
 
-          <div className="flex flex-wrap gap-3">
-            <a href="#work" className="relative rounded-full btn-gradient px-4 py-2 text-sm font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200">
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href="https://vgen.co/anarndom"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="relative rounded-full btn-gradient px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-95"
+            >
+              Commission on VGen
+            </a>
+            <a
+              href="#work"
+              className="rounded-full border border-zinc-300/70 bg-white/60 px-4 py-2 text-sm font-semibold text-zinc-900 shadow-sm backdrop-blur transition hover:bg-white dark:border-zinc-700/70 dark:bg-zinc-900/40 dark:text-zinc-100 dark:hover:bg-zinc-900/70"
+            >
               View work
             </a>
-            <a href="#contact" className="rounded-full border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-950 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-100 dark:hover:border-zinc-500">
-              Contact for commissions
+          </div>
+          <div className="pt-3">
+            <a
+              href="#contact"
+              className="text-sm font-medium text-zinc-600 underline decoration-transparent underline-offset-4 transition hover:text-zinc-950 hover:decoration-zinc-300 dark:text-zinc-300 dark:hover:text-white dark:hover:decoration-zinc-600"
+            >
+              Contact
             </a>
           </div>
 
@@ -43,11 +59,28 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-4 text-sm text-zinc-600 dark:text-zinc-400">
-            <Link className="hover:text-zinc-950 dark:hover:text-white" href={site.instagram} target="_blank" rel="noreferrer">
+          <div className="flex flex-wrap items-center gap-3 text-sm">
+            <a
+              href="https://vgen.co/anarndom"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="group inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-zinc-200 backdrop-blur transition hover:border-white/20 hover:bg-white/10"
+            >
+              <span className="h-2 w-2 rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500" />
+              VGen commissions
+            </a>
+            <Link
+              href={site.instagram}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-zinc-200/70 bg-white/60 px-3 py-1.5 text-zinc-800 backdrop-blur transition hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:bg-white/10"
+            >
               Instagram
             </Link>
-            <Link className="hover:text-zinc-950 dark:hover:text-white" href={`mailto:${site.email}`}>
+            <Link
+              href={`mailto:${site.email}`}
+              className="inline-flex items-center gap-2 rounded-full border border-zinc-200/70 bg-white/60 px-3 py-1.5 text-zinc-800 backdrop-blur transition hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:bg-white/10"
+            >
               {site.email}
             </Link>
           </div>
