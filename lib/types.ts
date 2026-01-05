@@ -2,7 +2,9 @@ export type GalleryItem = {
   id: string;
   src: string;
   title: string;
-  category: "Character" | "Portrait" | "Character Sheet" | "Sketch";
+  // Keep this flexible because content is sourced from JSON.
+  // Category labels are used for filtering UI, not for strict typing.
+  category: string;
   width: number;
   height: number;
   alt: string;
