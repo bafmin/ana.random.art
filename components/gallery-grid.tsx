@@ -59,12 +59,17 @@ export function GalleryGrid({ items, initialCategory = "All" }: { items: Gallery
             key={i.id}
             type="button"
             onClick={() => setOpen(i)}
+            onMouseMove={(e) => {
+              const r = e.currentTarget.getBoundingClientRect();
+              e.currentTarget.style.setProperty("--mx", `${e.clientX - r.left}px`);
+              e.currentTarget.style.setProperty("--my", `${e.clientY - r.top}px`);
+            }}
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             whileHover={{ y: -2 }}
             transition={{ duration: 0.25 }}
-            className="group rounded-2xl border border-zinc-200/70 bg-zinc-50 p-3 text-left hover:border-zinc-300 dark:border-zinc-800/70 dark:bg-zinc-900/20 dark:hover:border-zinc-700"
+            className="group relative rounded-2xl border border-zinc-200/70 bg-white/60 p-2 text-left shadow-sm transition dark:border-zinc-800/70 dark:bg-zinc-900/20 card-glow shine hover:shadow-md"
           >
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-900">
               <Image

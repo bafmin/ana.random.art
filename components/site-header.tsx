@@ -51,12 +51,12 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 border-b backdrop-blur",
-        scrolled ? "border-zinc-200/70 bg-white/80 dark:border-zinc-800/70 dark:bg-zinc-950/70" : "border-transparent bg-transparent"
+        "sticky top-0 z-50 border-b backdrop-blur supports-[backdrop-filter]:backdrop-blur-xl",
+        scrolled ? "border-zinc-200/70 bg-white/70 dark:border-zinc-800/70 dark:bg-zinc-950/50" : "border-transparent bg-transparent"
       )}
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4">
-        <Link href="/" className="text-base font-semibold tracking-tight">
+        <Link href="/" className="text-base font-semibold tracking-tight gradient-text">
           Karan Ana Hernández
         </Link>
 
@@ -66,11 +66,17 @@ export function SiteHeader() {
               key={i.href}
               href={i.href}
               className={cn(
-                "hover:text-zinc-950 dark:hover:text-white",
+                "relative px-1 py-1 transition hover:text-zinc-950 dark:hover:text-white",
                 activeId === i.id ? "text-zinc-950 dark:text-white" : "text-zinc-600 dark:text-zinc-300"
               )}
             >
               {i.label}
+              <span
+                className={cn(
+                  "pointer-events-none absolute -bottom-1 left-0 h-0.5 w-full origin-left scale-x-0 rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 transition-transform duration-300",
+                  activeId === i.id && "scale-x-100"
+                )}
+              />
             </a>
           ))}
         </nav>
