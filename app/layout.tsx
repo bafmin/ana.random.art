@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Karan Ana Hernández | Character Design",
@@ -17,9 +18,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <SiteHeader />
-        <main className="mx-auto w-full max-w-6xl px-4 py-10">{children}</main>
-        <SiteFooter />
+        <ThemeProvider>
+          <SiteHeader />
+          <main className="mx-auto w-full max-w-6xl px-4 py-10">{children}</main>
+          <SiteFooter />
+        </ThemeProvider>
       </body>
     </html>
   );
