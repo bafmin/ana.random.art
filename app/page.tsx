@@ -129,7 +129,7 @@ export default function Page() {
             <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl">
               <Image
                 src="/ana-900.webp"
-                alt="Ana Hernandez"
+                alt="Ana Hernández"
                 width={900}
                 height={900}
                 priority={false}
@@ -177,8 +177,16 @@ export default function Page() {
                 Instagram
               </a>
               <a
+                href="https://vgen.co/anarndom"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex items-center rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-cyan-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              >
+                Commissions (VGen)
+              </a>
+              <a
                 href={`mailto:${site.email}`}
-                className="inline-flex items-center rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-cyan-500 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                className="inline-flex items-center rounded-full border border-black/10 bg-white/60 px-4 py-2 text-sm shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:shadow-md dark:border-white/10 dark:bg-white/5"
               >
                 Email
               </a>
@@ -196,8 +204,11 @@ export default function Page() {
                 Send a short brief. Include references, intended use, deadline, and budget range.
               </p>
               <div className="flex flex-wrap gap-3 pt-2">
-                <Link href={`mailto:${site.email}?subject=Commission%20Request`} className="relative rounded-full btn-gradient px-4 py-2 text-sm font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200">
-                  Email commission request
+                <Link href="https://vgen.co/anarndom" target="_blank" rel="noreferrer noopener" className="relative rounded-full btn-gradient px-4 py-2 text-sm font-semibold text-white">
+                  Commission via VGen
+                </Link>
+                <Link href={`mailto:${site.email}?subject=Commission%20Request`} className="rounded-full border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-950 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-100 dark:hover:border-zinc-500">
+                  Email
                 </Link>
                 <Link href={site.instagram} target="_blank" rel="noreferrer" className="rounded-full border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-950 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-100 dark:hover:border-zinc-500">
                   Message on Instagram

@@ -57,7 +57,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4">
         <Link href="/" className="text-base font-semibold tracking-tight gradient-text">
-          Karan Ana Hernández
+          Ana Hernández
         </Link>
 
         <nav className="hidden items-center gap-5 text-sm sm:flex">
@@ -84,10 +84,12 @@ export function SiteHeader() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <a
-            href="#contact"
-            className="rounded-full bg-zinc-950 px-3 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200"
+            href="https://vgen.co/anarndom"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 px-3 py-1.5 text-xs font-semibold text-white shadow-sm transition hover:opacity-90"
           >
-            Commission
+            Commissions
           </a>
         </div>
       </div>
