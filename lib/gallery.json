@@ -1,0 +1,137 @@
+{
+  "artist": "Karan Ana Hern\u00e1ndez",
+  "instagram": "https://www.instagram.com/ana.rndom.art",
+  "email": "Anakahernandez26@gmail.com",
+  "items": [
+    {
+      "id": "art-01",
+      "src": "/art/art-01.jpg",
+      "title": "Artwork 01",
+      "category": "Portrait",
+      "width": 1080,
+      "height": 1080,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-02",
+      "src": "/art/art-02.jpg",
+      "title": "Artwork 02",
+      "category": "Portrait",
+      "width": 1600,
+      "height": 2000,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-03",
+      "src": "/art/art-03.jpg",
+      "title": "Artwork 03",
+      "category": "Portrait",
+      "width": 3000,
+      "height": 3000,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-04",
+      "src": "/art/art-04.jpg",
+      "title": "Artwork 04",
+      "category": "Sketch",
+      "width": 1080,
+      "height": 1080,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-05",
+      "src": "/art/art-05.jpg",
+      "title": "Artwork 05",
+      "category": "Portrait",
+      "width": 1080,
+      "height": 1500,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-06",
+      "src": "/art/art-06.jpg",
+      "title": "Artwork 06",
+      "category": "Character",
+      "width": 1600,
+      "height": 2000,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-07",
+      "src": "/art/art-07.jpg",
+      "title": "Artwork 07",
+      "category": "Character",
+      "width": 1080,
+      "height": 1080,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-08",
+      "src": "/art/art-08.jpg",
+      "title": "Artwork 08",
+      "category": "Character",
+      "width": 2000,
+      "height": 3000,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-09",
+      "src": "/art/art-09.jpg",
+      "title": "Artwork 09",
+      "category": "Character",
+      "width": 3000,
+      "height": 3000,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-10",
+      "src": "/art/art-10.jpg",
+      "title": "Artwork 10",
+      "category": "Character",
+      "width": 1080,
+      "height": 1080,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-11",
+      "src": "/art/art-11.jpg",
+      "title": "Artwork 11",
+      "category": "Character Sheet",
+      "width": 2000,
+      "height": 2300,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-12",
+      "src": "/art/art-12.jpg",
+      "title": "Artwork 12",
+      "category": "Character Sheet",
+      "width": 1920,
+      "height": 1080,
+      "alt": "Digital character art",
+      "year": 2025
+    },
+    {
+      "id": "art-13",
+      "src": "/art/art-13.jpg",
+      "title": "Artwork 13",
+      "category": "Character",
+      "width": 2600,
+      "height": 3000,
+      "alt": "Digital character art",
+      "year": 2025
+    }
+  ]
+}
